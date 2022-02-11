@@ -1,0 +1,754 @@
+Unloading StdEnv/2020
+
+The following have been reloaded with a version change:
+  1) gcccore/.9.3.0 => gcccore/.7.3.0     2) imkl/2020.1.217 => imkl/2018.3.222     3) openmpi/4.0.3 => openmpi/3.1.2     4) ucx/1.8.0 => ucx/1.5.2
+
+
+CPPTRAJ: Trajectory Analysis. V18.01
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 04/26/21 16:35:50
+| Available memory: 2.638 GB
+
+INPUT: Reading input from '../align_rmsd_nocp41.in'
+  [parm ../model.parm7]
+	Reading '../model.parm7' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin prod_1_crd.nc]
+	Reading 'prod_1_crd.nc' as Amber NetCDF
+  [trajin prod_2_crd.nc]
+	Reading 'prod_2_crd.nc' as Amber NetCDF
+  [trajin prod_3_crd.nc]
+	Reading 'prod_3_crd.nc' as Amber NetCDF
+  [trajin prod_4_crd.nc]
+	Reading 'prod_4_crd.nc' as Amber NetCDF
+  [trajin prod_5_crd.nc]
+	Reading 'prod_5_crd.nc' as Amber NetCDF
+  [trajin prod_6_crd.nc]
+	Reading 'prod_6_crd.nc' as Amber NetCDF
+  [trajin prod_7_crd.nc]
+	Reading 'prod_7_crd.nc' as Amber NetCDF
+  [trajin prod_8_crd.nc]
+	Reading 'prod_8_crd.nc' as Amber NetCDF
+  [trajin prod_9_crd.nc]
+	Reading 'prod_9_crd.nc' as Amber NetCDF
+  [trajin prod_10_crd.nc]
+	Reading 'prod_10_crd.nc' as Amber NetCDF
+  [trajin prod_11_crd.nc]
+	Reading 'prod_11_crd.nc' as Amber NetCDF
+  [trajin prod_12_crd.nc]
+	Reading 'prod_12_crd.nc' as Amber NetCDF
+  [trajin prod_13_crd.nc]
+	Reading 'prod_13_crd.nc' as Amber NetCDF
+  [trajin prod_14_crd.nc]
+	Reading 'prod_14_crd.nc' as Amber NetCDF
+  [trajin prod_15_crd.nc]
+	Reading 'prod_15_crd.nc' as Amber NetCDF
+  [trajin prod_16_crd.nc]
+	Reading 'prod_16_crd.nc' as Amber NetCDF
+  [trajin prod_17_crd.nc]
+	Reading 'prod_17_crd.nc' as Amber NetCDF
+  [trajin prod_18_crd.nc]
+	Reading 'prod_18_crd.nc' as Amber NetCDF
+  [trajin prod_19_crd.nc]
+	Reading 'prod_19_crd.nc' as Amber NetCDF
+  [trajin prod_20_crd.nc]
+	Reading 'prod_20_crd.nc' as Amber NetCDF
+  [trajin prod_21_crd.nc]
+	Reading 'prod_21_crd.nc' as Amber NetCDF
+  [trajin prod_22_crd.nc]
+	Reading 'prod_22_crd.nc' as Amber NetCDF
+  [trajin prod_23_crd.nc]
+	Reading 'prod_23_crd.nc' as Amber NetCDF
+  [trajin prod_24_crd.nc]
+	Reading 'prod_24_crd.nc' as Amber NetCDF
+  [trajin prod_25_crd.nc]
+	Reading 'prod_25_crd.nc' as Amber NetCDF
+  [trajin prod_26_crd.nc]
+	Reading 'prod_26_crd.nc' as Amber NetCDF
+  [trajin prod_27_crd.nc]
+	Reading 'prod_27_crd.nc' as Amber NetCDF
+  [trajin prod_28_crd.nc]
+	Reading 'prod_28_crd.nc' as Amber NetCDF
+  [trajin prod_29_crd.nc]
+	Reading 'prod_29_crd.nc' as Amber NetCDF
+  [trajin prod_30_crd.nc]
+	Reading 'prod_30_crd.nc' as Amber NetCDF
+  [trajin prod_31_crd.nc]
+	Reading 'prod_31_crd.nc' as Amber NetCDF
+  [trajin prod_32_crd.nc]
+	Reading 'prod_32_crd.nc' as Amber NetCDF
+  [trajin prod_33_crd.nc]
+	Reading 'prod_33_crd.nc' as Amber NetCDF
+  [trajin prod_34_crd.nc]
+	Reading 'prod_34_crd.nc' as Amber NetCDF
+  [trajin prod_35_crd.nc]
+	Reading 'prod_35_crd.nc' as Amber NetCDF
+  [trajin prod_36_crd.nc]
+	Reading 'prod_36_crd.nc' as Amber NetCDF
+  [trajin prod_37_crd.nc]
+	Reading 'prod_37_crd.nc' as Amber NetCDF
+  [trajin prod_38_crd.nc]
+	Reading 'prod_38_crd.nc' as Amber NetCDF
+  [trajin prod_39_crd.nc]
+	Reading 'prod_39_crd.nc' as Amber NetCDF
+  [trajin prod_30_crd.nc]
+	Reading 'prod_30_crd.nc' as Amber NetCDF
+  [trajin prod_41_crd.nc]
+	Reading 'prod_41_crd.nc' as Amber NetCDF
+  [reference ../model.rst7 [crys]]
+	Reading '../model.rst7' as Amber Restart
+	Setting active reference for distance-based masks: 'model.rst7'
+  [reference prod_1_crd.nc firstframe [first]]
+	Reading 'prod_1_crd.nc' as Amber NetCDF
+Warning: Reference has 100 frames, only reading frame 1
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [rms ToCrys :1-145,171-231&!@H= ref [crys] out rmsd_crys.out]
+    RMSD: (:1-145,171-231&!@H*), reference is "default_name" (:1-145,171-231&!@H*).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: model.parm7, 627569 atoms, 208437 res, box: Trunc. Oct., 208207 mol, 207872 solvent
+
+INPUT TRAJECTORIES (41 total):
+ 0: 'prod_1_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 1: 'prod_2_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 2: 'prod_3_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 3: 'prod_4_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 4: 'prod_5_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 5: 'prod_6_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 6: 'prod_7_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 7: 'prod_8_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 8: 'prod_9_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 9: 'prod_10_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 10: 'prod_11_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 11: 'prod_12_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 12: 'prod_13_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 13: 'prod_14_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 14: 'prod_15_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 15: 'prod_16_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 16: 'prod_17_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 17: 'prod_18_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 18: 'prod_19_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 19: 'prod_20_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 20: 'prod_21_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 21: 'prod_22_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 22: 'prod_23_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 23: 'prod_24_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 24: 'prod_25_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 25: 'prod_26_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 26: 'prod_27_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 27: 'prod_28_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 28: 'prod_29_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 29: 'prod_30_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 30: 'prod_31_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 31: 'prod_32_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 32: 'prod_33_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 33: 'prod_34_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 34: 'prod_35_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 35: 'prod_36_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 36: 'prod_37_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 37: 'prod_38_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 38: 'prod_39_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 39: 'prod_30_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 40: 'prod_41_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+  Coordinate processing will occur on 4100 frames.
+
+REFERENCE FRAMES (2 total):
+    0: [crys]:1
+    1: [first]:1
+	Active reference frame for distance-based masks is 'default_name'
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'model.parm7' (2 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	208206 molecules are mobile.
+  1: [rms ToCrys :1-145,171-231&!@H= ref [crys] out rmsd_crys.out]
+	Target mask: [:1-145,171-231&!@H*](1651)
+	Reference mask: [:1-145,171-231&!@H*](1651)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+----- prod_1_crd.nc (1-100, 1) -----
+ 0% 
+----- prod_2_crd.nc (1-100, 1) -----
+
+----- prod_3_crd.nc (1-100, 1) -----
+
+----- prod_4_crd.nc (1-100, 1) -----
+
+----- prod_5_crd.nc (1-100, 1) -----
+10% 
+----- prod_6_crd.nc (1-100, 1) -----
+
+----- prod_7_crd.nc (1-100, 1) -----
+
+----- prod_8_crd.nc (1-100, 1) -----
+
+----- prod_9_crd.nc (1-100, 1) -----
+20% 
+----- prod_10_crd.nc (1-100, 1) -----
+
+----- prod_11_crd.nc (1-100, 1) -----
+
+----- prod_12_crd.nc (1-100, 1) -----
+
+----- prod_13_crd.nc (1-100, 1) -----
+30% 
+----- prod_14_crd.nc (1-100, 1) -----
+
+----- prod_15_crd.nc (1-100, 1) -----
+
+----- prod_16_crd.nc (1-100, 1) -----
+
+----- prod_17_crd.nc (1-100, 1) -----
+40% 
+----- prod_18_crd.nc (1-100, 1) -----
+
+----- prod_19_crd.nc (1-100, 1) -----
+
+----- prod_20_crd.nc (1-100, 1) -----
+
+----- prod_21_crd.nc (1-100, 1) -----
+50% 
+----- prod_22_crd.nc (1-100, 1) -----
+
+----- prod_23_crd.nc (1-100, 1) -----
+
+----- prod_24_crd.nc (1-100, 1) -----
+
+----- prod_25_crd.nc (1-100, 1) -----
+60% 
+----- prod_26_crd.nc (1-100, 1) -----
+
+----- prod_27_crd.nc (1-100, 1) -----
+
+----- prod_28_crd.nc (1-100, 1) -----
+
+----- prod_29_crd.nc (1-100, 1) -----
+70% 
+----- prod_30_crd.nc (1-100, 1) -----
+
+----- prod_31_crd.nc (1-100, 1) -----
+
+----- prod_32_crd.nc (1-100, 1) -----
+
+----- prod_33_crd.nc (1-100, 1) -----
+80% 
+----- prod_34_crd.nc (1-100, 1) -----
+
+----- prod_35_crd.nc (1-100, 1) -----
+
+----- prod_36_crd.nc (1-100, 1) -----
+
+----- prod_37_crd.nc (1-100, 1) -----
+90% 
+----- prod_38_crd.nc (1-100, 1) -----
+
+----- prod_39_crd.nc (1-100, 1) -----
+
+----- prod_30_crd.nc (1-100, 1) -----
+
+----- prod_41_crd.nc (1-100, 1) -----
+100% Complete.
+
+Read 4100 frames and processed 4100 frames.
+TIME: Avg. throughput= 12.5339 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (1 total):
+	ToCrys "ToCrys" (double, rms), size is 4100
+
+DATAFILES (1 total):
+  rmsd_crys.out (Standard Data File):  ToCrys
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 327.1140 s ( 99.99%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0196 s (  0.01%)
+TIME:		Other              : 0.0050 s (  0.00%)
+TIME:	Run Total 327.1388 s
+---------- RUN END ---------------------------------------------------
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [rms ToFirst :1-145,171-310&!@H= ref [first] out rmsd_first.out]
+    RMSD: (:1-145,171-310&!@H*), reference is "default_name" (:1-145,171-310&!@H*).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: model.parm7, 627569 atoms, 208437 res, box: Trunc. Oct., 208207 mol, 207872 solvent
+
+INPUT TRAJECTORIES (41 total):
+ 0: 'prod_1_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 1: 'prod_2_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 2: 'prod_3_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 3: 'prod_4_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 4: 'prod_5_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 5: 'prod_6_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 6: 'prod_7_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 7: 'prod_8_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 8: 'prod_9_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 9: 'prod_10_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 10: 'prod_11_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 11: 'prod_12_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 12: 'prod_13_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 13: 'prod_14_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 14: 'prod_15_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 15: 'prod_16_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 16: 'prod_17_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 17: 'prod_18_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 18: 'prod_19_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 19: 'prod_20_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 20: 'prod_21_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 21: 'prod_22_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 22: 'prod_23_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 23: 'prod_24_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 24: 'prod_25_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 25: 'prod_26_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 26: 'prod_27_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 27: 'prod_28_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 28: 'prod_29_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 29: 'prod_30_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 30: 'prod_31_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 31: 'prod_32_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 32: 'prod_33_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 33: 'prod_34_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 34: 'prod_35_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 35: 'prod_36_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 36: 'prod_37_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 37: 'prod_38_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 38: 'prod_39_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 39: 'prod_30_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 40: 'prod_41_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+  Coordinate processing will occur on 4100 frames.
+
+REFERENCE FRAMES (2 total):
+    0: [crys]:1
+    1: [first]:1
+	Active reference frame for distance-based masks is 'default_name'
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'model.parm7' (2 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	208206 molecules are mobile.
+  1: [rms ToFirst :1-145,171-310&!@H= ref [first] out rmsd_first.out]
+	Target mask: [:1-145,171-310&!@H*](1730)
+	Reference mask: [:1-145,171-310&!@H*](1730)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+----- prod_1_crd.nc (1-100, 1) -----
+ 0% 
+----- prod_2_crd.nc (1-100, 1) -----
+
+----- prod_3_crd.nc (1-100, 1) -----
+
+----- prod_4_crd.nc (1-100, 1) -----
+
+----- prod_5_crd.nc (1-100, 1) -----
+10% 
+----- prod_6_crd.nc (1-100, 1) -----
+
+----- prod_7_crd.nc (1-100, 1) -----
+
+----- prod_8_crd.nc (1-100, 1) -----
+
+----- prod_9_crd.nc (1-100, 1) -----
+20% 
+----- prod_10_crd.nc (1-100, 1) -----
+
+----- prod_11_crd.nc (1-100, 1) -----
+
+----- prod_12_crd.nc (1-100, 1) -----
+
+----- prod_13_crd.nc (1-100, 1) -----
+30% 
+----- prod_14_crd.nc (1-100, 1) -----
+
+----- prod_15_crd.nc (1-100, 1) -----
+
+----- prod_16_crd.nc (1-100, 1) -----
+
+----- prod_17_crd.nc (1-100, 1) -----
+40% 
+----- prod_18_crd.nc (1-100, 1) -----
+
+----- prod_19_crd.nc (1-100, 1) -----
+
+----- prod_20_crd.nc (1-100, 1) -----
+
+----- prod_21_crd.nc (1-100, 1) -----
+50% 
+----- prod_22_crd.nc (1-100, 1) -----
+
+----- prod_23_crd.nc (1-100, 1) -----
+
+----- prod_24_crd.nc (1-100, 1) -----
+
+----- prod_25_crd.nc (1-100, 1) -----
+60% 
+----- prod_26_crd.nc (1-100, 1) -----
+
+----- prod_27_crd.nc (1-100, 1) -----
+
+----- prod_28_crd.nc (1-100, 1) -----
+
+----- prod_29_crd.nc (1-100, 1) -----
+70% 
+----- prod_30_crd.nc (1-100, 1) -----
+
+----- prod_31_crd.nc (1-100, 1) -----
+
+----- prod_32_crd.nc (1-100, 1) -----
+
+----- prod_33_crd.nc (1-100, 1) -----
+80% 
+----- prod_34_crd.nc (1-100, 1) -----
+
+----- prod_35_crd.nc (1-100, 1) -----
+
+----- prod_36_crd.nc (1-100, 1) -----
+
+----- prod_37_crd.nc (1-100, 1) -----
+90% 
+----- prod_38_crd.nc (1-100, 1) -----
+
+----- prod_39_crd.nc (1-100, 1) -----
+
+----- prod_30_crd.nc (1-100, 1) -----
+
+----- prod_41_crd.nc (1-100, 1) -----
+100% Complete.
+
+Read 4100 frames and processed 4100 frames.
+TIME: Avg. throughput= 9.4945 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (2 total):
+	ToCrys "ToCrys" (double, rms), size is 4100
+	ToFirst "ToFirst" (double, rms), size is 4100
+
+DATAFILES (2 total):
+  rmsd_crys.out (Standard Data File):  ToCrys
+  rmsd_first.out (Standard Data File):  ToFirst
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 431.8312 s (100.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0120 s (  0.00%)
+TIME:		Other              : 0.0048 s (  0.00%)
+TIME:	Run Total 431.8481 s
+---------- RUN END ---------------------------------------------------
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [rmsd Align :1-145,171-231@O,C,N,CA ref [crys]]
+    RMSD: (:1-145,171-231@O,C,N,CA), reference is "default_name" (:1-145,171-231@O,C,N,CA).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [trajout cMD_prod_aligned.dcd]
+	Writing 'cMD_prod_aligned.dcd' as Charmm DCD
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: model.parm7, 627569 atoms, 208437 res, box: Trunc. Oct., 208207 mol, 207872 solvent
+
+INPUT TRAJECTORIES (41 total):
+ 0: 'prod_1_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 1: 'prod_2_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 2: 'prod_3_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 3: 'prod_4_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 4: 'prod_5_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 5: 'prod_6_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 6: 'prod_7_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 7: 'prod_8_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 8: 'prod_9_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 9: 'prod_10_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 10: 'prod_11_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 11: 'prod_12_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 12: 'prod_13_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 13: 'prod_14_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 14: 'prod_15_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 15: 'prod_16_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 16: 'prod_17_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 17: 'prod_18_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 18: 'prod_19_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 19: 'prod_20_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 20: 'prod_21_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 21: 'prod_22_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 22: 'prod_23_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 23: 'prod_24_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 24: 'prod_25_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 25: 'prod_26_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 26: 'prod_27_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 27: 'prod_28_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 28: 'prod_29_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 29: 'prod_30_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 30: 'prod_31_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 31: 'prod_32_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 32: 'prod_33_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 33: 'prod_34_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 34: 'prod_35_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 35: 'prod_36_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 36: 'prod_37_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 37: 'prod_38_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 38: 'prod_39_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 39: 'prod_30_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+ 40: 'prod_41_crd.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm model.parm7 (Trunc. Oct. box) (reading 100 of 100)
+  Coordinate processing will occur on 4100 frames.
+
+REFERENCE FRAMES (2 total):
+    0: [crys]:1
+    1: [first]:1
+	Active reference frame for distance-based masks is 'default_name'
+
+OUTPUT TRAJECTORIES (1 total):
+  'cMD_prod_aligned.dcd' (4100 frames) is a CHARMM DCD file Little Endian 32 bit
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'model.parm7' (2 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	208206 molecules are mobile.
+  1: [rmsd Align :1-145,171-231@O,C,N,CA ref [crys]]
+	Target mask: [:1-145,171-231@O,C,N,CA](821)
+	Reference mask: [:1-145,171-231@O,C,N,CA](821)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  cMD_prod_aligned.dcd (coordinates, time, box)
+----- prod_1_crd.nc (1-100, 1) -----
+ 0% 
+----- prod_2_crd.nc (1-100, 1) -----
+
+----- prod_3_crd.nc (1-100, 1) -----
+
+----- prod_4_crd.nc (1-100, 1) -----
+
+----- prod_5_crd.nc (1-100, 1) -----
+10% 
+----- prod_6_crd.nc (1-100, 1) -----
+
+----- prod_7_crd.nc (1-100, 1) -----
+
+----- prod_8_crd.nc (1-100, 1) -----
+
+----- prod_9_crd.nc (1-100, 1) -----
+20% 
+----- prod_10_crd.nc (1-100, 1) -----
+
+----- prod_11_crd.nc (1-100, 1) -----
+
+----- prod_12_crd.nc (1-100, 1) -----
+
+----- prod_13_crd.nc (1-100, 1) -----
+30% 
+----- prod_14_crd.nc (1-100, 1) -----
+
+----- prod_15_crd.nc (1-100, 1) -----
+
+----- prod_16_crd.nc (1-100, 1) -----
+
+----- prod_17_crd.nc (1-100, 1) -----
+40% 
+----- prod_18_crd.nc (1-100, 1) -----
+
+----- prod_19_crd.nc (1-100, 1) -----
+
+----- prod_20_crd.nc (1-100, 1) -----
+
+----- prod_21_crd.nc (1-100, 1) -----
+50% 
+----- prod_22_crd.nc (1-100, 1) -----
+
+----- prod_23_crd.nc (1-100, 1) -----
+
+----- prod_24_crd.nc (1-100, 1) -----
+
+----- prod_25_crd.nc (1-100, 1) -----
+60% 
+----- prod_26_crd.nc (1-100, 1) -----
+
+----- prod_27_crd.nc (1-100, 1) -----
+
+----- prod_28_crd.nc (1-100, 1) -----
+
+----- prod_29_crd.nc (1-100, 1) -----
+70% 
+----- prod_30_crd.nc (1-100, 1) -----
+
+----- prod_31_crd.nc (1-100, 1) -----
+
+----- prod_32_crd.nc (1-100, 1) -----
+
+----- prod_33_crd.nc (1-100, 1) -----
+80% 
+----- prod_34_crd.nc (1-100, 1) -----
+
+----- prod_35_crd.nc (1-100, 1) -----
+
+----- prod_36_crd.nc (1-100, 1) -----
+
+----- prod_37_crd.nc (1-100, 1) -----
+90% 
+----- prod_38_crd.nc (1-100, 1) -----
+
+----- prod_39_crd.nc (1-100, 1) -----
+
+----- prod_30_crd.nc (1-100, 1) -----
+
+----- prod_41_crd.nc (1-100, 1) -----
+100% Complete.
+
+Read 4100 frames and processed 4100 frames.
+TIME: Avg. throughput= 10.1721 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (3 total):
+	ToCrys "ToCrys" (double, rms), size is 4100
+	ToFirst "ToFirst" (double, rms), size is 4100
+	Align "Align" (double, rms), size is 4100
+
+DATAFILES (2 total):
+  rmsd_crys.out (Standard Data File):  ToCrys
+  rmsd_first.out (Standard Data File):  ToFirst
+
+RUN TIMING:
+TIME:		Init               : 0.0014 s (  0.00%)
+TIME:		Trajectory Process : 403.0623 s ( 99.99%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0357 s (  0.00%)
+TIME:	Run Total 403.0994 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 1171.8953 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V18.01
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 04/26/21 16:55:22
+| Available memory: 3.288 GB
+
+INPUT: Reading input from 'barrel_rmsd_nofit.in'
+  [parm model.parm7]
+	Reading 'model.parm7' as Amber Topology
+	Radius Set: ArgH and AspGluO modified Bondi2 radii (mbondi3)
+  [trajin cMD_prod_aligned.dcd]
+	Reading 'cMD_prod_aligned.dcd' as Charmm DCD
+	Version >= 22; assuming shape matrix is stored.
+  [reference cMD_prod_aligned.dcd firstframe [first]]
+	Reading 'cMD_prod_aligned.dcd' as Charmm DCD
+	Version >= 22; assuming shape matrix is stored.
+Warning: Reference has 4100 frames, only reading frame 1
+	Setting active reference for distance-based masks: 'cMD_prod_aligned.dcd'
+  [rms :1-231&!@H= ref [first] out rmsd_all.out]
+    RMSD: (:1-231&!@H*), reference is "Cpptraj generated dcd file." (:1-231&!@H*).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms :1-145,171-231&!@H= ref [first] out rmsd_nocp.out]
+    RMSD: (:1-145,171-231&!@H*), reference is "Cpptraj generated dcd file." (:1-145,171-231&!@H*).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms :200-206 &!@H= ref [first] nofit out rmsd_loop.out]
+    RMSD: (:200-206), reference is "Cpptraj generated dcd file." (:200-206).
+	No fitting will be performed.
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: model.parm7, 627569 atoms, 208437 res, box: Trunc. Oct., 208207 mol, 207872 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'cMD_prod_aligned.dcd' is a CHARMM DCD file Little Endian 32 bit, Parm model.parm7 (Trunc. Oct. box) (reading 4100 of 4100)
+  Coordinate processing will occur on 4100 frames.
+
+REFERENCE FRAMES (1 total):
+    0: [first]:1
+	Active reference frame for distance-based masks is 'Cpptraj generated dcd file.'
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'model.parm7' (3 actions):
+  0: [rms :1-231&!@H= ref [first] out rmsd_all.out]
+	Target mask: [:1-231&!@H*](1828)
+	Reference mask: [:1-231&!@H*](1828)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+  1: [rms :1-145,171-231&!@H= ref [first] out rmsd_nocp.out]
+	Target mask: [:1-145,171-231&!@H*](1651)
+	Reference mask: [:1-145,171-231&!@H*](1651)
+Warning: Coordinates are being rotated and box coordinates are present.
+Warning: Unit cell vectors are NOT rotated; imaging will not be possible
+Warning:  after the RMS-fit is performed.
+  2: [rms :200-206 &!@H= ref [first] nofit out rmsd_loop.out]
+	Target mask: [:200-206](104)
+	Reference mask: [:200-206](104)
+----- cMD_prod_aligned.dcd (1-4100, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 4100 frames and processed 4100 frames.
+TIME: Avg. throughput= 87.2061 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (3 total):
+	RMSD_00002 "RMSD_00002" (double, rms), size is 4100
+	RMSD_00003 "RMSD_00003" (double, rms), size is 4100
+	&!@H= "&!@H=" (double, rms), size is 4100
+
+DATAFILES (3 total):
+  rmsd_all.out (Standard Data File):  RMSD_00002
+  rmsd_nocp.out (Standard Data File):  RMSD_00003
+  rmsd_loop.out (Standard Data File):  &!@H=
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 47.0150 s ( 99.89%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0433 s (  0.09%)
+TIME:		Other              : 0.0095 s (  0.00%)
+TIME:	Run Total 47.0679 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 49.6916 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

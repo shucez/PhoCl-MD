@@ -1,0 +1,9 @@
+parm model.parm7
+trajin cMD_prod_aligned.dcd
+reference cMD_prod_aligned.dcd firstframe [first]
+
+rms :1-231&!@H= ref [first] out rmsd_all.out
+rms :1-145,171-231&!@H= ref [first] out rmsd_nocp.out
+rms :200-206 &!@H= ref [first] nofit out rmsd_loop.out
+run
+

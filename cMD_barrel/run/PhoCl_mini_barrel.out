@@ -1,0 +1,294 @@
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21308pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21308Unable to load CUDA library.
+
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21306pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21306Unable to load CUDA library.
+
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21307pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21307Unable to load CUDA library.
+
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b9601ba40fd in ???
+#1  0x2b9601ba335d in ???
+#2  0x2b960264527f in ???
+#3  0x2b9602645214 in ???
+#4  0x2b9602646679 in ???
+#5  0x2b961067e609 in ???
+#6  0x2b961067eb01 in ???
+#7  0x2b961068b29a in ???
+#8  0x2b961068beee in ???
+#9  0x2b9610464de8 in ???
+#10  0x2b960189c922 in ???
+#11  0x2b96019025f9 in ???
+#12  0x2b96018ddd44 in ???
+#13  0x2b96017cce8f in ???
+#14  0x2b96017ee2da in ???
+#15  0x2b9601554857 in ???
+#16  0x5725dc in ???
+#17  0x53b333 in ???
+#18  0x40e14c in ???
+#19  0x2b96026322df in ???
+#20  0x40e6e9 in ???
+	at ../sysdeps/x86_64/start.S:120
+#21  0xffffffffffffffff in ???
+srun: error: cdr696: task 2: Aborted (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=64675777.0
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ad400a320fd in ???
+#1  0x2ad400a3135d in ???
+#2  0x2ad4014d327f in ???
+#3  0x2ad4014d3214 in ???
+#4  0x2ad4014d4679 in ???
+#5  0x2ad4073b5609 in ???
+#6  0x2ad4073b5b01 in ???
+#7  0x2ad4073c229a in ???
+#8  0x2ad4073c2eee in ???
+#9  0x2ad40719bde8 in ???
+#10  0x2ad40072a922 in ???
+#11  0x2ad4007905f9 in ???
+#12  0x2ad40076bd44 in ???
+#13  0x2ad40065ae8f in ???
+#14  0x2ad40067c2da in ???
+#15  0x2ad4003e2857 in ???
+#16  0x5725dc in ???
+#17  0x53b333 in ???
+#18  0x40e14c in ???
+#19  0x2ad4014c02df in ???
+#20  0x40e6e9 in ???
+	at ../sysdeps/x86_64/start.S:120
+#21  0xffffffffffffffff in ???
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21309pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21309Unable to load CUDA library.
+
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b9fbd1260fd in ???
+#1  0x2b9fbd12535d in ???
+#2  0x2b9fbdbc727f in ???
+#3  0x2b9fbdbc7214 in ???
+#4  0x2b9fbdbc8679 in ???
+#5  0x2b9fc3aa9609 in ???
+#6  0x2b9fc3aa9b01 in ???
+#7  0x2b9fc3ab629a in ???
+#8  0x2b9fc3ab6eee in ???
+#9  0x2b9fc388fde8 in ???
+#10  0x2b9fbce1e922 in ???
+#11  0x2b9fbce845f9 in ???
+#12  0x2b9fbce5fd44 in ???
+#13  0x2b9fbcd4ee8f in ???
+#14  0x2b9fbcd702da in ???
+#15  0x2b9fbcad6857 in ???
+#16  0x5725dc in ???
+#17  0x53b333 in ???
+#18  0x40e14c in ???
+#19  0x2b9fbdbb42df in ???
+#20  0x40e6e9 in ???
+	at ../sysdeps/x86_64/start.S:120
+#21  0xffffffffffffffff in ???
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21310pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21310Unable to load CUDA library.
+
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2ad359f280fd in ???
+#1  0x2ad359f2735d in ???
+#2  0x2ad35a9c927f in ???
+#3  0x2ad35a9c9214 in ???
+#4  0x2ad35a9ca679 in ???
+#5  0x2ad368a8c609 in ???
+#6  0x2ad368a8cb01 in ???
+#7  0x2ad368a9929a in ???
+#8  0x2ad368a99eee in ???
+#9  0x2ad368872de8 in ???
+#10  0x2ad359c20922 in ???
+#11  0x2ad359c865f9 in ???
+#12  0x2ad359c61d44 in ???
+#13  0x2ad359b50e8f in ???
+#14  0x2ad359b722da in ???
+#15  0x2ad3598d8857 in ???
+#16  0x5725dc in ???
+#17  0x53b333 in ???
+#18  0x40e14c in ???
+#19  0x2ad35a9b62df in ???
+#20  0x40e6e9 in ???
+	at ../sysdeps/x86_64/start.S:120
+#21  0xffffffffffffffff in ???
+slurmstepd: error: *** STEP 64675777.0 ON cdr696 CANCELLED AT 2021-03-26T01:15:29 ***
+srun: error: cdr696: tasks 0-1,3: Aborted (core dumped)
+srun: error: cdr696: tasks 4-5: Terminated
+srun: Force Terminated StepId=64675777.0
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21963pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21963Unable to load CUDA library.
+
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21960pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21960Unable to load CUDA library.
+
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b0dfd38b0fd in ???
+#1  0x2b0dfd38a35d in ???
+#2  0x2b0dfde2c27f in ???
+#3  0x2b0dfde2c214 in ???
+#4  0x2b0dfde2d679 in ???
+#5  0x2b0e03d0e609 in ???
+#6  0x2b0e03d0eb01 in ???
+#7  0x2b0e03d1b29a in ???
+#8  0x2b0e03d1beee in ???
+#9  0x2b0e03af4de8 in ???
+#10  0x2b0dfd083922 in ???
+#11  0x2b0dfd0e95f9 in ???
+#12  0x2b0dfd0c4d44 in ???
+#13  0x2b0dfcfb3e8f in ???
+#14  0x2b0dfcfd52da in ???
+#15  0x2b0dfcd3b857 in ???
+#16  0x5725dc in ???
+#17  0x53b333 in ???
+#18  0x40e14c in ???
+#19  0x2b0dfde192df in ???
+#20  0x40e6e9 in ???
+	at ../sysdeps/x86_64/start.S:120
+#21  0xffffffffffffffff in ???
+srun: error: cdr696: task 4: Aborted (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=64675777.1
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca mpi_cuda_support 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+cdr696.int.cedar.computecanada.ca.21962pmemd.MPI: Unable to open libcuda.so.  Error libcuda.so.1: cannot open shared object file: No such file or directory
+cdr696.int.cedar.computecanada.ca.21962Unable to load CUDA library.
+
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x2b869043b0fd in ???
+#1  0x2b869043a35d in ???
+#2  0x2b8690edc27f in ???
+#3  0x2b8690edc214 in ???
+#4  0x2b8690edd679 in ???
+#5  0x2b8696dbe609 in ???
+#6  0x2b8696dbeb01 in ???
+#7  0x2b8696dcb29a in ???
+#8  0x2b8696dcbeee in ???
+#9  0x2b8696ba4de8 in ???
+#10  0x2b8690133922 in ???
+#11  0x2b86901995f9 in ???
+#12  0x2b8690174d44 in ???
+#13  0x2b8690063e8f in ???
+#14  0x2b86900852da in ???
+#15  0x2b868fdeb857 in ???
+#16  0x5725dc in ???
+#17  0x53b333 in ???
+#18  0x40e14c in ???
+#19  0x2b8690ec92df in ???
+#20  0x40e6e9 in ???
+	at ../sysdeps/x86_64/start.S:120
+#21  0xffffffffffffffff in ???
+slurmstepd: error: *** STEP 64675777.1 ON cdr696 CANCELLED AT 2021-03-26T01:16:12 ***
+srun: error: cdr696: tasks 0,2-3,5: Terminated
+srun: error: cdr696: task 1: Aborted (core dumped)
+srun: Force Terminated StepId=64675777.1

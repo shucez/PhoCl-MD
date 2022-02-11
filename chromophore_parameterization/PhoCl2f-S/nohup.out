@@ -1,0 +1,18 @@
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/prep to search path.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/lib to search path.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/parm to search path.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/cmd to search path.
+
+Welcome to LEaP!
+(no leaprc in search path)
+
+*** Error: tl_getline(): not interactive, use stdio.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/prep to search path.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/lib to search path.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/parm to search path.
+-I: Adding /home/shuce/software/Amber/amber18/dat/leap/cmd to search path.
+
+Welcome to LEaP!
+(no leaprc in search path)
+
+*** Error: tl_getline(): not interactive, use stdio.

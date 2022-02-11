@@ -1,0 +1,17 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+set default PBRadii mbondi3
+loadAmberPrep rcp.prepin
+loadAmberParams frcmod.default.rcp
+loadAmberParams frcmod.clean.rcp
+loadAmberParams frcmod.known
+loadAmberParams frcmod.correspondence
+x = loadPDB PhoCl2f-L.pdb
+charge x
+solvateOct x TIP3PBOX 30
+charge x
+addions2 x Na+ 3
+charge x
+check x
+saveAmberParm x PhoCl2f-L.parm7 PhoCl2f-L.rst7
+quit

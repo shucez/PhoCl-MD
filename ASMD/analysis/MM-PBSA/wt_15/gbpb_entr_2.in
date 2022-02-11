@@ -1,0 +1,17 @@
+&general
+  verbose=1,
+  startframe=501
+  endframe=1000 
+  interval=25,
+  full_traj=1,
+  entropy=1,
+/
+&pb
+  istrng=0.1,
+  inp=2,
+  radiopt=0,
+/
+&gb
+  saltcon=0.1,
+  igb=8,
+/

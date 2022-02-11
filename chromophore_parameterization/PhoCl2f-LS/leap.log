@@ -1,0 +1,584 @@
+log started: Sat Jun 20 23:23:23 2020
+
+Log file: ./leap.log
+>>> #
+>>> # ----- leaprc for loading the ff14SB force field
+>>> # ----- NOTE: this is designed for PDB format 3!
+>>> #
+>>> #	load atom type hybridizations
+>>> #
+>>> addAtomTypes {
+>>> 	{ "H"   "H" "sp3" }
+>>> 	{ "HO"  "H" "sp3" }
+>>> 	{ "HS"  "H" "sp3" }
+>>> 	{ "H1"  "H" "sp3" }
+>>> 	{ "H2"  "H" "sp3" }
+>>> 	{ "H3"  "H" "sp3" }
+>>> 	{ "H4"  "H" "sp3" }
+>>> 	{ "H5"  "H" "sp3" }
+>>> 	{ "HW"  "H" "sp3" }
+>>> 	{ "HC"  "H" "sp3" }
+>>> 	{ "HA"  "H" "sp3" }
+>>> 	{ "HP"  "H" "sp3" }
+>>> 	{ "HZ"  "H" "sp3" }
+>>> 	{ "OH"  "O" "sp3" }
+>>> 	{ "OS"  "O" "sp3" }
+>>> 	{ "O"   "O" "sp2" }
+>>> 	{ "O2"  "O" "sp2" }
+>>> 	{ "OP"  "O" "sp2" }
+>>> 	{ "OW"  "O" "sp3" }
+>>> 	{ "CT"  "C" "sp3" }
+>>> 	{ "CX"  "C" "sp3" }
+>>> 	{ "C8"  "C" "sp3" }
+>>> 	{ "2C"  "C" "sp3" }
+>>> 	{ "3C"  "C" "sp3" }
+>>> 	{ "CH"  "C" "sp3" }
+>>> 	{ "CS"  "C" "sp2" }
+>>> 	{ "C"   "C" "sp2" }
+>>> 	{ "CO"   "C" "sp2" }
+>>> 	{ "C*"  "C" "sp2" }
+>>> 	{ "CA"  "C" "sp2" }
+>>> 	{ "CB"  "C" "sp2" }
+>>> 	{ "CC"  "C" "sp2" }
+>>> 	{ "CN"  "C" "sp2" }
+>>> 	{ "CM"  "C" "sp2" }
+>>> 	{ "CK"  "C" "sp2" }
+>>> 	{ "CQ"  "C" "sp2" }
+>>> 	{ "CD"  "C" "sp2" }
+>>> 	{ "C5"  "C" "sp2" }
+>>> 	{ "C4"  "C" "sp2" }
+>>> 	{ "CP"  "C" "sp2" }
+>>> 	{ "CI"  "C" "sp3" }
+>>> 	{ "CJ"  "C" "sp2" }
+>>> 	{ "CW"  "C" "sp2" }
+>>> 	{ "CV"  "C" "sp2" }
+>>> 	{ "CR"  "C" "sp2" }
+>>> 	{ "CA"  "C" "sp2" }
+>>> 	{ "CY"  "C" "sp2" }
+>>> 	{ "C0"  "Ca" "sp3" }
+>>> 	{ "MG"  "Mg" "sp3" }
+>>> 	{ "N"   "N" "sp2" }
+>>> 	{ "NA"  "N" "sp2" }
+>>> 	{ "N2"  "N" "sp2" }
+>>> 	{ "N*"  "N" "sp2" }
+>>> 	{ "NP"  "N" "sp2" }
+>>> 	{ "NQ"  "N" "sp2" }
+>>> 	{ "NB"  "N" "sp2" }
+>>> 	{ "NC"  "N" "sp2" }
+>>> 	{ "NT"  "N" "sp3" }
+>>> 	{ "NY"  "N" "sp2" }
+>>> 	{ "N3"  "N" "sp3" }
+>>> 	{ "S"   "S" "sp3" }
+>>> 	{ "SH"  "S" "sp3" }
+>>> 	{ "P"   "P" "sp3" }
+>>> 	{ "LP"  ""  "sp3" }
+>>> 	{ "EP"  ""  "sp3" }
+>>> 	{ "F"   "F" "sp3" }
+>>> 	{ "Cl"  "Cl" "sp3" }
+>>> 	{ "Br"  "Br" "sp3" }
+>>> 	{ "I"   "I"  "sp3" }
+>>> }
+>>> #
+>>> #	Load the main parameter set.
+>>> #
+>>> parm10 = loadamberparams parm10.dat
+Loading parameters: /home/shuce/software/Amber/amber18/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+>>> frcmod14SB = loadamberparams frcmod.ff14SB
+Loading parameters: /home/shuce/software/Amber/amber18/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+>>> #
+>>> #	Load main chain and terminating amino acid libraries
+>>> #
+>>> loadOff amino12.lib
+Loading library: /home/shuce/software/Amber/amber18/dat/leap/lib/amino12.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: HYP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>>> loadOff aminoct12.lib
+Loading library: /home/shuce/software/Amber/amber18/dat/leap/lib/aminoct12.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CHYP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>>> loadOff aminont12.lib
+Loading library: /home/shuce/software/Amber/amber18/dat/leap/lib/aminont12.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>>> 
+>>> #
+>>> #	Define the PDB name map for the amino acids
+>>> #
+>>> addPdbResMap {
+>>>   { 0 "HYP" "HYP" } { 1 "HYP" "CHYP" }
+>>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>>> }
+>>> 
+>>> #
+>>> # assume that most often proteins use HIE
+>>> #
+>>> NHIS = NHIE
+>>> HIS = HIE
+>>> CHIS = CHIE
+>> 
+>> source leaprc.water.tip3p
+----- Source: /home/shuce/software/Amber/amber18/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /home/shuce/software/Amber/amber18/dat/leap/cmd/leaprc.water.tip3p done
+>>> #
+>>> #       Load water and ions for TIP3P + Li/Merz monovalent ions 
+>>> #       + Joung-Chetham monovalent ions
+>>> #       + Li/Merz highly charged ions (+2 to +4, 12-6 normal usage set)
+>>> #
+>>> #       Note: the Li/Merz monovalent set is loaded only to get Tl+,
+>>> #          Cu+, Ag+ NH4+, H3O+.  Since we load Joung-Cheatham second,
+>>> #          the alkali halide parameters come from the Joung-Cheatham set
+>>> #
+>>> addAtomTypes {
+>>> 	{ "HW"  "H" "sp3" }
+>>> 	{ "OW"  "O" "sp3" }
+>>> 	{ "F-"   "F" "sp3" }
+>>> 	{ "Cl-"  "Cl" "sp3" }
+>>> 	{ "Br-"  "Br" "sp3" }
+>>> 	{ "I-"   "I"  "sp3" }
+>>> 	{ "Li+"  "Li"  "sp3" }
+>>> 	{ "Na+"  "Na"  "sp3" }
+>>> 	{ "K+"  "K"  "sp3" }
+>>> 	{ "Rb+"  "Rb"  "sp3" }
+>>> 	{ "Cs+"  "Cs"  "sp3" }
+>>> 	{ "Mg+"  "Mg"  "sp3" }
+>>>     { "Tl+"  "Tl"  "sp3" }
+>>>     { "Cu+"  "Cu"  "sp3" }
+>>>     { "Ag+"  "Ag"  "sp3" }
+>>>     { "NH4+"  "N"  "sp3" }
+>>>     { "H3O+"  "O"  "sp3" }
+>>>     { "Be2+" "Be"  "sp3" }
+>>>     { "Cu2+" "Cu"  "sp3" }
+>>>     { "Ni2+" "Ni"  "sp3" }
+>>>     { "Pt2+" "Pt"  "sp3" }
+>>>     { "Zn2+" "Zn"  "sp3" }
+>>>     { "Co2+" "Co"  "sp3" }
+>>>     { "Pd2+" "Pd"  "sp3" }
+>>>     { "Ag2+" "Ag"  "sp3" }
+>>>     { "Cr2+" "Cr"  "sp3" }
+>>>     { "Fe2+" "Fe"  "sp3" }
+>>>     { "Mg2+" "Mg"  "sp3" }
+>>>     { "V2+"  "V"   "sp3" }
+>>>     { "Mn2+" "Mn"  "sp3" }
+>>>     { "Hg2+" "Hg"  "sp3" }
+>>>     { "Cd2+" "Cd"  "sp3" }
+>>>     { "Yb2+" "Yb"  "sp3" }
+>>>     { "Ca2+" "Ca"  "sp3" }
+>>>     { "Sn2+" "Sn"  "sp3" }
+>>>     { "Pb2+" "Pb"  "sp3" }
+>>>     { "Eu2+" "Eu"  "sp3" }
+>>>     { "Sr2+" "Sr"  "sp3" }
+>>>     { "Sm2+" "Sm"  "sp3" }
+>>>     { "Ba2+" "Ba"  "sp3" }
+>>>     { "Ra2+" "Ra"  "sp3" }
+>>>     { "Al3+" "Al"  "sp3" }
+>>>     { "Fe3+" "Fe"  "sp3" }
+>>>     { "Cr3+" "Cr"  "sp3" }
+>>>     { "In3+" "In"  "sp3" }
+>>>     { "Tl3+" "Tl"  "sp3" }
+>>>     { "Y3+"  "Y"   "sp3" }
+>>>     { "La3+" "La"  "sp3" }
+>>>     { "Ce3+" "Ce"  "sp3" }
+>>>     { "Pr3+" "Pr"  "sp3" }
+>>>     { "Nd3+" "Nd"  "sp3" }
+>>>     { "Sm3+" "Sm"  "sp3" }
+>>>     { "Eu3+" "Eu"  "sp3" }
+>>>     { "Gd3+" "Gd"  "sp3" }
+>>>     { "Tb3+" "Tb"  "sp3" }
+>>>     { "Dy3+" "Dy"  "sp3" }
+>>>     { "Er3+" "Er"  "sp3" }
+>>>     { "Tm3+" "Tm"  "sp3" }
+>>>     { "Lu3+" "Lu"  "sp3" }
+>>>     { "Hf4+" "Hf"  "sp3" }
+>>>     { "Zr4+" "Zr"  "sp3" }
+>>>     { "Ce4+" "Ce"  "sp3" }
+>>>     { "U4+"  "U"   "sp3" }
+>>>     { "Pu4+" "Pu"  "sp3" }
+>>>     { "Th4+" "Th"  "sp3" }
+>>> }
+>>> loadOff atomic_ions.lib
+Loading library: /home/shuce/software/Amber/amber18/dat/leap/lib/atomic_ions.lib
+Loading: AG
+Loading: AL
+Loading: Ag
+Loading: BA
+Loading: BR
+Loading: Be
+Loading: CA
+Loading: CD
+Loading: CE
+Loading: CL
+Loading: CO
+Loading: CR
+Loading: CS
+Loading: CU
+Loading: CU1
+Loading: Ce
+Loading: Cl-
+Loading: Cr
+Loading: Dy
+Loading: EU
+Loading: EU3
+Loading: Er
+Loading: F
+Loading: FE
+Loading: FE2
+Loading: GD3
+Loading: H3O+
+Loading: HE+
+Loading: HG
+Loading: HZ+
+Loading: Hf
+Loading: IN
+Loading: IOD
+Loading: K
+Loading: K+
+Loading: LA
+Loading: LI
+Loading: LU
+Loading: MG
+Loading: MN
+Loading: NA
+Loading: NH4
+Loading: NI
+Loading: Na+
+Loading: Nd
+Loading: PB
+Loading: PD
+Loading: PR
+Loading: PT
+Loading: Pu
+Loading: RB
+Loading: Ra
+Loading: SM
+Loading: SR
+Loading: Sm
+Loading: Sn
+Loading: TB
+Loading: TL
+Loading: Th
+Loading: Tl
+Loading: Tm
+Loading: U4+
+Loading: V2+
+Loading: Y
+Loading: YB2
+Loading: ZN
+Loading: Zr
+>>> loadOff solvents.lib
+Loading library: /home/shuce/software/Amber/amber18/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>>> HOH = TP3
+>>> WAT = TP3
+>>> loadAmberParams frcmod.tip3p
+Loading parameters: /home/shuce/software/Amber/amber18/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+>>> loadAmberParams frcmod.ions1lm_126_tip3p
+Loading parameters: /home/shuce/software/Amber/amber18/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+>>> loadAmberParams frcmod.ionsjc_tip3p
+Loading parameters: /home/shuce/software/Amber/amber18/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+>>> loadAmberParams frcmod.ions234lm_126_tip3p
+Loading parameters: /home/shuce/software/Amber/amber18/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+>>> 
+>> 
+>> set default PBRadii mbondi3
+Using ArgH and AspGluO modified Bondi2 radii
+>> loadAmberPrep rcp.prepin
+Loading Prep file: ./rcp.prepin
+Loaded UNIT: RCP
+>> loadAmberParams frcmod.default.rcp
+Loading parameters: ./frcmod.default.rcp
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+>> loadAmberParams frcmod.clean.rcp
+Loading parameters: ./frcmod.clean.rcp
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+>> loadAmberParams frcmod.known
+Loading parameters: ./frcmod.known
+Reading force field modification type file (frcmod)
+Reading title:
+FRCMOD file generated by PyRED version JAN-2019 - q4md-forcefieldtools.org
+>> loadAmberParams frcmod.correspondence
+Loading parameters: ./frcmod.correspondence
+Reading force field modification type file (frcmod)
+Reading title:
+FRCMOD file generated by PyRED version JAN-2019 - q4md-forcefieldtools.org
+>> x = loadPDB PhoCl2f-LS.pdb
+Loading PDB file: ./PhoCl2f-LS.pdb
+Matching PDB residue names to LEaP variables.
+Mapped residue VAL, term: Terminal/beginning, seq. number: 0 to: NVAL.
+Mapped residue PRO, term: Terminal/last, seq. number: 239 to: CPRO.
+  total atoms in file: 3712
+  Leap added 60 missing atoms according to residue templates:
+       60 H / lone pairs
+>> charge x
+Total unperturbed charge:  -3.000000
+Total perturbed charge:    -3.000000
+>> solvateOct x TIP3PBOX 30
+Scaling up box by a factor of 1.229428 to meet diagonal cut criterion
+  Solute vdw bounding box:              48.174 42.629 59.085
+  Total bounding box for atom centers:  132.850 132.850 132.850
+      (box expansion for 'iso' is  24.3%)
+  Solvent unit box:                     18.774 18.774 18.774
+The number of boxes:  x= 8  y= 8  z= 8
+  Volume: 1199025.563 A^3 (oct)
+  Total mass 670010.860 amu,  Density 0.928 g/cc
+  Added 35682 residues.
+>> charge x
+Total unperturbed charge:  -3.000000
+Total perturbed charge:    -3.000000
+>> addions2 x Na+ 3
+Adding 3 counter ions to "x" using 1A grid
+Total solute charge:  -3.00  Max atom radius:   2.00
+Grid extends from solute vdw + 1.37  to  7.37
+Box:
+   enclosing:  -64.95 -74.21 -77.29   64.69 75.19 76.24
+   sized:			      191.05 181.79 178.71
+   edge:        256.00
+Resolution:      1.00 Angstrom.
+Tree depth: 8
+Volume =  2.02% of box, grid points 338062
+Calculating grid charges
+Placed Na+ in x at (7.05, 17.79, 2.71).
+Placed Na+ in x at (-5.95, -8.21, -14.29).
+Placed Na+ in x at (-13.95, 0.79, 12.71).
+
+Done adding ions.
+>> charge x
+Total unperturbed charge:  -0.000000
+Total perturbed charge:    -0.000000
+>> check x
+Checking 'x'....
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.499116 angstroms between .R<ILE 29>.A<H 2> and .R<GLN 48>.A<O 17>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.123881 angstroms between .R<SER 69>.A<HG 9> and .R<RCP 232>.A<H2 14>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.458244 angstroms between .R<VAL 135>.A<O 16> and .R<LEU 211>.A<H 2>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.173788 angstroms between .R<PRO 175>.A<O 14> and .R<LEU 201>.A<HD13 13>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.459633 angstroms between .R<PRO 175>.A<O 14> and .R<LEU 201>.A<HD11 11>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.468171 angstroms between .R<ASN 179>.A<H 2> and .R<GLY 198>.A<O 7>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 0.927968 angstroms between .R<RCP 232>.A<O 37> and .R<ASN 233>.A<H 2>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 0.951639 angstroms between .R<RCP 232>.A<O 37> and .R<ASN 233>.A<N 1>
+
+/home/shuce/software/Amber/amber18/bin/teLeap: Warning!
+Close contact of 1.380341 angstroms between .R<RCP 232>.A<C 36> and .R<ASN 233>.A<H 2>
+Checking parameters for unit 'x'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 9
+Unit is OK.
+>> saveAmberParm x PhoCl2f-LS.parm7 PhoCl2f-LS.rst7
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  CD-CA-CA-CA
+        atoms are: C8 C5 C7 C6
+ ** Warning: No sp2 improper torsion term for  CC-CA-CD-HA
+        atoms are: C9 C7 C8 H8
+old PREP-specified impropers:
+ <RCP 232>:  C11  C12  N    CA  
+ <RCP 232>:  C9   N    C11  O2  
+ <RCP 232>:  C11  C8   C9   N3  
+ <RCP 232>:  C7   C9   C8   H8  
+ <RCP 232>:  C6   C5   C7   C8  
+ <RCP 232>:  C7   C4   C5   H3  
+ <RCP 232>:  C2   C5   C4   H6  
+ <RCP 232>:  C3   C4   C2   O1  
+ <RCP 232>:  C2   C6   C3   H5  
+ <RCP 232>:  C3   C7   C6   H4  
+ <RCP 232>:  C13  N    C12  N3  
+ <RCP 232>:  C15  C12  C13  H11 
+ <RCP 232>:  C16  C13  C15  H13 
+ <RCP 232>:  C15  C17  C16  N4  
+ <RCP 232>:  C16  C10  N4   H12 
+ <RCP 232>:  H    N4   C10  N1  
+ <RCP 232>:  C16  H7   C17  N1  
+ <RCP 232>:  CA   +M   C    O   
+ total 766 improper torsions applied
+ 18 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CPRO	1
+	NVAL	1
+	WAT	35682
+  )
+ (no restraints)
+>> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 9; Notes = 0.

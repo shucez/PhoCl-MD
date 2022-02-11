@@ -1,0 +1,15 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+set default PBRadii mbondi3
+loadAmberPrep rcp.prepin
+loadAmberParams frcmod.default.rcp
+loadAmberParams frcmod.clean.rcp
+loadAmberParams frcmod.known
+loadAmberParams frcmod.correspondence
+x = loadPDB barrel.pdb
+charge x
+solvateOct x TIP3PBOX 30
+charge x
+check x
+saveAmberParm x model.parm7 model.rst7
+quit

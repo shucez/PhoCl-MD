@@ -1,0 +1,17 @@
+-database /home/shuce/software/rosetta/rosetta_bin_linux_2018.33.60351_bundle/main/database
+-in:file:fullatom
+-in:file:s start.IEY.pdb
+-in:file:remap_pdb_atom_names_for IEY
+-loops:loop_file Red.loop
+-loops:frag_sizes 9 3 1
+-loops:frag_files  aat000_09_05.200_v1_3.gz aat000_03_05.200_v1_3.gz none
+-loops:remodel perturb_kic_with_fragments 
+-loops:refine refine_kic_with_fragments
+-out:nstruct 1
+-out:overwrite
+-out:path ./output/
+-ex1
+-ex2
+-mute core.io.database
+-mute protocols.looprelax.FragmentPerturber 
+-mute core.fragments.ConstantLengthFragSet

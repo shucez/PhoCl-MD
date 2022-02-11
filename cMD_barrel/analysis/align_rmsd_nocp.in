@@ -1,0 +1,57 @@
+parm ../model.parm7
+trajin prod_1_crd.nc
+trajin prod_2_crd.nc
+trajin prod_3_crd.nc
+trajin prod_4_crd.nc
+trajin prod_5_crd.nc
+trajin prod_6_crd.nc
+trajin prod_7_crd.nc
+trajin prod_8_crd.nc
+trajin prod_9_crd.nc
+trajin prod_10_crd.nc
+trajin prod_11_crd.nc
+trajin prod_12_crd.nc
+trajin prod_13_crd.nc
+trajin prod_14_crd.nc
+trajin prod_15_crd.nc
+trajin prod_16_crd.nc
+trajin prod_17_crd.nc
+trajin prod_18_crd.nc
+trajin prod_19_crd.nc
+trajin prod_20_crd.nc
+trajin prod_21_crd.nc
+trajin prod_22_crd.nc
+trajin prod_23_crd.nc
+trajin prod_24_crd.nc
+trajin prod_25_crd.nc
+trajin prod_26_crd.nc
+trajin prod_27_crd.nc
+trajin prod_28_crd.nc
+trajin prod_29_crd.nc
+trajin prod_30_crd.nc
+trajin prod_31_crd.nc
+trajin prod_32_crd.nc
+trajin prod_33_crd.nc
+trajin prod_34_crd.nc
+trajin prod_35_crd.nc
+trajin prod_36_crd.nc
+trajin prod_37_crd.nc
+trajin prod_38_crd.nc
+trajin prod_39_crd.nc
+trajin prod_40_crd.nc
+trajin prod_41_crd.nc
+reference ../model.rst7 [crys]
+reference prod_1_crd.nc firstframe [first]
+autoimage
+# distance @213,234,245,269,284,308,319,336,350,412,431,442,461,471,485,499,511,530,544,561,595,606,626,645,659,681,700,717,737,759,766,973,987,1003,1010,1034,1049,1059,1070,1084,1099,1123,1140,1161,1176,1219,1235,1254,1276,1283,1295,1311,1333,1350,1372,1391,1410,1472,1489,1510,1534,1545,1557,1578,1602,1616,1630,1651,1673,1868,1885,1905,1921,1933,1950,1974,1993,2008,2027,2046,2057,2155,2177,2193,2215,2234,2255,2270,2287,2297,2313,2323,2798,2815,2837,2851,2873,2892,2914,2931,2946,2953,2967,3004,3021,3031,3051,3067,3086,3101,3108,3123,3130,3141,3148,3226,3245,3262,3276,3295,3307,3326,3341,3357,3379,3488,3509,3521,3540,3559,3573,3587,3597 @3650,3657,3671,3695,3711,3731,3745,3767,3796 out dist21.out
+
+rms ToCrys :1-145,171-231&!@H= ref [crys] out rmsd_crys.out
+run
+autoimage
+rms ToFirst :1-145,171-310&!@H= ref [first] out rmsd_first.out
+run
+autoimage
+rmsd Align :1-145,171-231@O,C,N,CA ref [crys]
+trajout cMD_prod_aligned.dcd
+run
+

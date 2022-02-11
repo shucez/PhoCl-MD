@@ -1,0 +1,159 @@
+
+          -------------------------------------------------------
+          Amber 18 PMEMD                              2018
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 18
+
+| Run on 03/26/2021 at 02:29:41
+
+|   Executable path: pmemd.cuda
+| Working directory: /lustre04/scratch/shuce/PhoCl/barrel/Barrel_ASMD/run
+|          Hostname: blg5603
+
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: mdin/equil_4.mdin                                                     
+|  MDOUT: mdout/equil_4.mdout                                                   
+| INPCRD: restrt/equil_3.rst7                                                   
+|   PARM: model.parm7                                                           
+| RESTRT: restrt/equil_4.rst7                                                   
+|   REFC: restrt/equil_3.rst7                                                   
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: traj/equil_4_crd.nc                                                   
+| MDINFO: mdinfo                                                                
+|  MDFRC: mdfrc                                                                 
+
+
+ Here is the input file:
+
+A NPT simulation for common production-level simulations                       
+ &cntrl                                                                        
+    imin=0,        ! No minimization                                           
+    irest=1,       ! This IS a restart of an old MD simulation                 
+    ntx=5,         ! So our inpcrd file has velocities                         
+                                                                               
+    ! Temperature control                                                      
+    ntt=3,         ! Langevin dynamics                                         
+    gamma_ln=1.0,  ! Friction coefficient (ps^-1)                              
+    temp0=310,   ! Target temperature                                          
+                                                                               
+    ! Potential energy control                                                 
+    cut=12.0,      ! Nonbonded cutoff, in Angstroms                            
+    fswitch=10.0,  ! Force-based switching                                     
+                                                                               
+    ! MD settings                                                              
+    nstlim=50000,  ! 50K steps, 100 ps total                                   
+    dt=0.002,      ! time step (ps)                                            
+                                                                               
+    ! SHAKE                                                                    
+    ntc=2,         ! Constrain bonds containing hydrogen                       
+    ntf=2,         ! Do not calculate forces of bonds containing hydrogen      
+                                                                               
+    ! Control how often information is printed                                 
+    ntpr=1000,     ! Print energies every 1000 steps                           
+    ntwx=1000,     ! Print coordinates every 1000 steps to the trajectory      
+    ntwr=10000,    ! Print a restart file every 10K steps (can be less frequent
+!   ntwv=-1,       ! Uncomment to also print velocities to trajectory          
+!   ntwf=-1,       ! Uncomment to also print forces to trajectory              
+    ntxo=2,        ! Write NetCDF format                                       
+    ioutfm=1,      ! Write NetCDF format (always do this!)                     
+                                                                               
+    ! Wrap coordinates when printing them to the same unit cell                
+    iwrap=0,                                                                   
+                                                                               
+    ! Constant pressure control.                                               
+    barostat=2,    ! MC barostat... change to 1 for Berendsen                  
+    ntp=1,         ! 1=isotropic, 2=anisotropic, 3=semi-isotropic w/ surften   
+    pres0=1.0,     ! Target external pressure, in bar                          
+                                                                               
+    ! Restraint options                                                        
+    ntr=1,         ! Positional restraints for proteins, sugars, ligands, and l
+    nmropt=1,      ! Dihedral restraints for sugars and lipids                 
+                                                                               
+    ! Set water atom/residue names for SETTLE recognition                      
+    watnam='WAT',  ! Water residues are named WAT                              
+    owtnm='O',     ! Water oxygens are named O                                 
+ /                                                                             
+                                                                               
+ &ewald                                                                        
+    vdwmeth = 0,                                                               
+ /                                                                             
+                                                                               
+ &wt                                                                           
+    type='END'                                                                 
+ /                                                                             
+&end                                                                           
+Protein posres                                                                 
+1.0                                                                            
+RES 1 231                                                                      
+END                                                                            
+END                                                                            
+
+
+Note: ig = -1. Setting random seed to   829423 based on wallclock time in 
+      microseconds.
+| irandom = 1, using AMBER's internal random number generator (default).
+ 
+|--------------------- INFORMATION ----------------------
+| GPU (CUDA) Version of PMEMD in use: NVIDIA GPU IN USE.
+|                    Version 18.0.0
+| 
+|                      03/25/2018
+| 
+| Implementation by:
+|                    Ross C. Walker     (SDSC)
+|                    Scott Le Grand     (nVIDIA)
+| 
+| Version 18 performance extensions by:
+|                    David Cerutti     (Rutgers)
+| 
+| Precision model in use:
+|      [SPFP] - Single Precision Forces, 64-bit Fixed Point
+|               Accumulation. (Default)
+| 
+|--------------------------------------------------------
+ 
+|----------------- CITATION INFORMATION -----------------
+|
+|    When publishing work that utilized the CUDA version
+|    of AMBER, please cite the following in addition to
+|    the regular AMBER citations:
+|
+|  - Romelia Salomon-Ferrer; Andreas W. Goetz; Duncan
+|    Poole; Scott Le Grand; Ross C. Walker "Routine
+|    microsecond molecular dynamics simulations with
+|    AMBER - Part II: Particle Mesh Ewald", J. Chem.
+|    Theory Comput., 2013, 9 (9), pp3878-3888,
+|    DOI: 10.1021/ct400314y.
+|
+|  - Andreas W. Goetz; Mark J. Williamson; Dong Xu;
+|    Duncan Poole; Scott Le Grand; Ross C. Walker
+|    "Routine microsecond molecular dynamics simulations
+|    with AMBER - Part I: Generalized Born", J. Chem.
+|    Theory Comput., 2012, 8 (5), pp1542-1555.
+|
+|  - Scott Le Grand; Andreas W. Goetz; Ross C. Walker
+|    "SPFP: Speed without compromise - a mixed precision
+|    model for GPU accelerated molecular dynamics
+|    simulations.", Comp. Phys. Comm., 2013, 184
+|    pp374-380, DOI: 10.1016/j.cpc.2012.09.022
+|
+|--------------------------------------------------------
+ 
+|------------------- GPU DEVICE INFO --------------------
+|
+|            CUDA_VISIBLE_DEVICES: 0
+|   CUDA Capable Devices Detected:      1
+|           CUDA Device ID in use:      0
+|                CUDA Device Name: Tesla V100-SXM2-16GB
+|     CUDA Device Global Mem Size:  16160 MB
+| CUDA Device Num Multiprocessors:     80
+|           CUDA Device Core Freq:   1.53 GHz
+|
+|--------------------------------------------------------
+ 
+
+  Unit    9 Error on OPEN: restrt/equil_3.rst7                                                                                                                                                                                                                                             

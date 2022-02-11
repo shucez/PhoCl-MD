@@ -1,0 +1,52 @@
+parm ../model.parm7
+trajin ASMD_crd.nc.1.*
+trajin ASMD_crd.nc.2.*
+trajin ASMD_crd.nc.3.*
+trajin ASMD_crd.nc.4.*
+trajin ASMD_crd.nc.5.*
+trajin ASMD_crd.nc.6.*
+trajin ASMD_crd.nc.7.*
+trajin ASMD_crd.nc.8.*
+trajin ASMD_crd.nc.9.*
+trajin ASMD_crd.nc.10.*
+trajin ASMD_crd.nc.11.*
+trajin ASMD_crd.nc.12.*
+trajin ASMD_crd.nc.13.*
+trajin ASMD_crd.nc.14.*
+trajin ASMD_crd.nc.15.*
+trajin ASMD_crd.nc.16.*
+trajin ASMD_crd.nc.17.*
+trajin ASMD_crd.nc.18.*
+trajin ASMD_crd.nc.19.*
+trajin ASMD_crd.nc.20.*
+trajin ASMD_crd.nc.21.*
+trajin ASMD_crd.nc.22.*
+trajin ASMD_crd.nc.23.*
+trajin ASMD_crd.nc.24.*
+trajin ASMD_crd.nc.25.*
+trajin ASMD_crd.nc.26.*
+trajin ASMD_crd.nc.27.*
+trajin ASMD_crd.nc.28.*
+trajin ASMD_crd.nc.29.*
+trajin ASMD_crd.nc.30.*
+trajin ASMD_crd.nc.31.*
+trajin ASMD_crd.nc.32.*
+trajin ASMD_crd.nc.33.*
+trajin ASMD_crd.nc.34.*
+trajin ASMD_crd.nc.35.*
+trajin ASMD_crd.nc.36.*
+trajin ASMD_crd.nc.37.*
+trajin ASMD_crd.nc.38.*
+trajin ASMD_crd.nc.39.*
+trajin ASMD_crd.nc.40.*
+reference ../rst/prod_20.rst7 [prod]
+autoimage
+# distance @213,234,245,269,284,308,319,336,350,412,431,442,461,471,485,499,511,530,544,561,595,606,626,645,659,681,700,717,737,759,766,973,987,1003,1010,1034,1049,1059,1070,1084,1099,1123,1140,1161,1176,1219,1235,1254,1276,1283,1295,1311,1333,1350,1372,1391,1410,1472,1489,1510,1534,1545,1557,1578,1602,1616,1630,1651,1673,1868,1885,1905,1921,1933,1950,1974,1993,2008,2027,2046,2057,2155,2177,2193,2215,2234,2255,2270,2287,2297,2313,2323,2798,2815,2837,2851,2873,2892,2914,2931,2946,2953,2967,3004,3021,3031,3051,3067,3086,3101,3108,3123,3130,3141,3148,3226,3245,3262,3276,3295,3307,3326,3341,3357,3379,3488,3509,3521,3540,3559,3573,3587,3597 @3650,3657,3671,3695,3711,3731,3745,3767,3796 out dist21.out
+
+rms ToCrys :1-144,171-231&!@H= ref [prod] out rmsd_crys.out
+run
+autoimage
+rmsd Align :1-145,171-231@O,C,N,CA ref [prod]
+trajout ASMD_prod_aligned.dcd
+run
+
